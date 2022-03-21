@@ -175,6 +175,8 @@ function esPositivo(numero) {
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
  
+
+
 }
 
 function agregarSimboloExclamacion(str) {
@@ -189,6 +191,7 @@ function combinarNombres(nombre, apellido) {
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
   
+  return nombre, + ' ', + apellido
 }
 
 function obtenerSaludo(nombre) {
@@ -202,20 +205,23 @@ function obtenerAreaRectangulo(alto, ancho) {
   // Retornar el area de un rectángulo teniendo su altura y ancho
   // Tu código:
   
+  return ancho * alto
 }
 
 
 function retornarPerimetro(lado){
   //Escibe una función a la cual reciba el valor del lado de un cuadrado y retorne su perímetro.
   //Escribe tu código aquí
-  
+   
+  return lado * 4
 }
 
 
 function areaDelTriangulo(base, altura){
   //Desarrolle una función que calcule el área de un triángulo.
   //Escribe tu código aquí
-
+  
+  return (base * altura) / 2
 }
 
 
@@ -235,6 +241,10 @@ function esVocal(letra){
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
   
+  if(letra === 'a' || 'e' || 'i'  || 'o' ||'u');
+    return 'Es vocal'
+    else if (letra !== 'a', 'e', 'i', 'o', 'u' || letra.length > 1);
+      return 'Dato incorrecto'
 }
 
 
