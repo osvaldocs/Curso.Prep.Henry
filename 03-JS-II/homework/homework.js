@@ -50,17 +50,14 @@ function saludo(idioma) {
   // Si "idioma" no es ninguno de los anteiores o es `undefined` devuelve "Hola!"
   // Tu código:
 
-  var idioma = ['aleman', 'mandarin', 'ingles']
 
-  if (idioma ===[0]); {
-    return 'Guten Tag'
-  } else if (idioma ===[1]); {
-    return 'Ni Hao!'
-  } else if (idioma ===[2]); {
+  if(idioma === 'aleman') {
+    return 'Guten Tag!';
+  } else if(idioma === 'mandarin'){
+    return 'Ni Hao!';
+  } else if(idioma ==='ingles'){
     return 'Hello!'
-  } else {
-    return 'Hola!'
-  }
+  } else return 'Hola!'
   
 }
 
@@ -80,7 +77,7 @@ function esDiezOCinco(numero) {
   // De lo contrario, devuelve "false"
   // Tu código:
 
-  if(numero === 10 || 5){
+  if(numero === 10 || numero === 5){
     return true
   } else {
     return false
@@ -92,7 +89,7 @@ function estaEnRango(numero) {
   // De lo contrario, devuelve "false"
   // Tu código:
 
-  if(numero < 50 && > 20){
+  if(numero < 50 && numero > 20){
     return true
   } else {
     return false
@@ -125,7 +122,7 @@ function fizzBuzz(numero) {
     return 'fizz';
   } else if(numero % 5 === 0){
     return 'buzz';
-  } else if(numero % (3 && 5) === 0){
+  } else if(numero % 3 === 0 && numero % 5 === 0){
     return 'fizzbuzz';
   } else {
     return numero
@@ -138,16 +135,17 @@ function operadoresLogicos(num1, num2, num3) {
   //Si alguno de los tres números es negativo, retornar ---> "Hay negativos"
   //Si num3 es más grande que num1 y num2, aumentar su valor en 1 y retornar el nuevo valor.
   //0 no es ni positivo ni negativo. Si alguno de los argumentos es 0, retornar "Error".
-  //Si no se cumplen ninguna de las condiciones anteriores, retornar false. 
-
-  if(num1 > num2 && num3 && 0){
+  
+  
+  if(num1 === 0|| num2 === 0 || num3 ===0){
+    return 'error';
+  }
+    else if(num1 > num2 && num3 && num1 > 0){
     return 'Número 1 es mayor y positivo';
   } else if((num1 || num2 || num3) < 0){
     return 'Hay negativos';  
-  } else if(num3 > num1 && num2){
-    return num3++;
-  } else if((num1 || num2 || num3) === 0){
-    return 'error';
+  } else if(num3 > num1 && num3 > num2){
+    return num3 + 1;
   } else {
     return false
   }
